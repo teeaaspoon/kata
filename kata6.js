@@ -29,13 +29,14 @@ var multiplicationTable = function(maxValue) {
                     table += " " + i + "    ";
                 }
             } else if (i > 0 && j > 0) {
+                var product = i * j;
                 //print the multiplied numbers and spaces them out
-                if (i * j >= 100) {
-                    table += " " + i * j + "  ";
-                } else if (i * j > 9) {
-                    table += " " + i * j + "   ";
+                if (product >= 100) {
+                    table += " " + product + "  ";
+                } else if (product > 9) {
+                    table += " " + product + "   ";
                 } else {
-                    table += " " + i * j + "    ";
+                    table += " " + product + "    ";
                 }
             }
             table += "|";
